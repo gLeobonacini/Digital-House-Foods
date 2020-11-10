@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Digital House Foods</string>
+    <string name="loginEmail">Email</string>
+    <string name="loginPassword">Password</string>
+    <string name="loginBtLogin">Log in</string>
+    <string name="loginOr">OR</string>
+    <string name="loginBtRegister">Register</string>
+    <string name="registroTbNome">Registro</string>
+    <string name="registroNome">Nome</string>
+    <string name="registroRepeatePassword">Repeate password</string>
+
+    <string name="homeRestauranteGenericoNome">Nome do restaurante</string>
+    <string name="homeRestauranteGenericoEndereco">Endereco</string>
+    <string name="homeRestauranteGenericoHorario">Horário</string>
+
+    <string name="homeRestauranteTonyNome">Tony Roma\'s</string>
+    <string name="homeRestauranteTonyEndereco">Av. Lavandisca, 717 - Indianópolis, São Paulo</string>
+    <string name="homeRestauranteTonyHorario">Fecha às 22:00</string>
+
+    <string name="homeRestauranteAoyamaNome">Aoyama - Moema</string>
+    <string name="homeRestauranteAoyamaEndereco">Alameda dos Arapanés, 532 - Moema</string>
+    <string name="homeRestauranteAoyamaHorario">Fecha às 00:00</string>
+
+    <string name="homeRestauranteOutbackNome">Outback - Moema</string>
+    <string name="homeRestauranteOutbackEndereco">Av. Moaci, 187, 187 - Moema, São Paulo</string>
+    <string name="homeRestauranteOutbackHorario">Fecha às 00:00</string>
+
+    <string name="homeRestauranteSiNome">Si señor!</string>
+    <string name="homeRestauranteSiEndereco">Alameda Jauaperi, 626 - Moema</string>
+    <string name="homeRestauranteSiHorario">Fecha às 01:00</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
