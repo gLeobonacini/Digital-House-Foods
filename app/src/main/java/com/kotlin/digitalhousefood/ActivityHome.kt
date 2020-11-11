@@ -1,11 +1,11 @@
 package com.kotlin.digitalhousefood
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
-import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_home.*
+
 
 class ActivityHome : AppCompatActivity(),RestauranteAdapter.OnClickRestauranteListener {
 
@@ -21,11 +21,14 @@ class ActivityHome : AppCompatActivity(),RestauranteAdapter.OnClickRestauranteLi
         rvRestaurante.setHasFixedSize(true)
     }
 
-    override fun onClickAluno(position: Int) {
-        
+    override fun onClickRestaurante(position: Int) {
+        val restaurante = listaRestaurante[position]
+        val intent = Intent(this, ActivityRestaurante::class.java)
+        intent.putExtra("imgRestaurante", restaurante.img)
+        intent.putExtra("nomeRestaurante", restaurante.nome)
+        startActivity(intent)
     }
 
-    // Retorna uma lista de pokemons
     fun getAllRestaurante() = arrayListOf(
         Restaurante(R.drawable.image1, "Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00"),
         Restaurante(R.drawable.image4, "Aoyama - Moema", "Alameda dos Arapanés, 532 - Moema", "Fecha às 00:00"),

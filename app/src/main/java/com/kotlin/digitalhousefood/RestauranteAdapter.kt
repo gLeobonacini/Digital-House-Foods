@@ -26,7 +26,7 @@ class RestauranteAdapter(private val listaRestaurante: ArrayList<Restaurante>, v
     }
 
     interface OnClickRestauranteListener{
-        fun onClickAluno(position: Int)
+        fun onClickRestaurante(position: Int)
     }
 
     inner class RestauranteViewHolder(itemView: View):RecyclerView.ViewHolder(itemView), View.OnClickListener{
@@ -42,7 +42,7 @@ class RestauranteAdapter(private val listaRestaurante: ArrayList<Restaurante>, v
         override fun onClick(v: View?) {
             val position = adapterPosition
             if(position != RecyclerView.NO_POSITION)
-                listener.onClickAluno(position)
+                listener.onClickRestaurante(position)
         }
     }
 }
