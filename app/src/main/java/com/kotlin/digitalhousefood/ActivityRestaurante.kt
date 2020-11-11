@@ -24,9 +24,9 @@ class ActivityRestaurante : AppCompatActivity(), PratoAdapter.OnClickPratoListen
 
         rvRestaurante.adapter = adapter
         rvRestaurante.layoutManager = GridLayoutManager(this,2)
-        rvRestaurante.setHasFixedSize(true)
 
-        tbRestaurante.setNavigationOnClickListener {
+
+        btRestauranteBack.setOnClickListener {
             finish()
         }
 

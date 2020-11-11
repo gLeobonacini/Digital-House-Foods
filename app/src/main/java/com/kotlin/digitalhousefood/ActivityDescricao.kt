@@ -13,7 +13,7 @@ class ActivityDescricao : AppCompatActivity() {
         txtDescricaoNomePrato.text = intent.getStringExtra("nomePrato")
         txtDescricaoDescricaoPrato.text = intent.getStringExtra("descricaoPrato")
 
-        tbDescricao.setNavigationOnClickListener {
+        btDescricaoBack.setOnClickListener {
             finish()
         }
     }
